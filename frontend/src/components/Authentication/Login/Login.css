@@ -1,0 +1,41 @@
+.container-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.container-login > div {
+
+    width: 30%;
+}
+.form-login > div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    transition: 2s;
+}
+
+.form-login > div > input{
+    padding: 1em;
+    width: 100%;
+}
+.btn-user{
+    border: none;
+    border-radius: 10px;
+    background-color: #1b6ca8;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    cursor: pointer;
+}
+.fa-user, .fa-key {
+    background-color: #383e56;
+    padding: 13px;
+    color: white;
+}
+
+@media (max-width: 860px){
+    .container-login > div{
+        width: 60%;
+    }
+}

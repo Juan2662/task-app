@@ -1,0 +1,133 @@
+.container-task {
+    width: 50%;
+    margin: 0 auto;
+}
+.settings{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.settings-sarch{
+    width: 60%;
+}
+.settings-sarch > input {
+    padding: 1.2em 0 1.2em 3em;
+    border: none;
+    border-radius: 20px;
+    background-color: #eee;
+    width: 100%;
+    float: right;
+}
+
+.settings-btn-add {
+    width: 30%;
+}
+
+.settings-btn-add > button{
+    color: #fff;
+    background-color: #393e46;
+    border: none;
+    border-radius: 6px;
+    padding: 1em;
+    width: 100%;
+    cursor: pointer;
+}
+
+.tarea{
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: #1b6ca8;
+    color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+}
+
+.tarea-data{
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+
+.tarea-setting{
+    box-sizing:border-box; 
+}
+.tarea-settings > i {
+    margin: 0 0.5em;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.tarea-settings > i:hover{
+    color: #000;
+}
+
+.msg-login, .sintareas{
+    text-align: center;
+    margin-top: 3em;
+}
+
+.prioridad{
+    height: 1.7em;
+    color: white;
+    opacity: 0.9;
+    font-family: 'Poppins', sans-serif;
+    font-size: .7em;
+    letter-spacing: 2px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin-left: 1em;
+}
+
+@media (max-width: 930px) {
+    .tarea{
+        flex-direction: column;
+    }
+    .tarea > div {
+        margin-bottom: .5em;
+    }
+    .tarea-data{
+        justify-content: center;
+    }
+
+    .settings-sarch > input{
+        width: 90%;
+    }
+    .settings-btn-add{
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 697px){
+    .container-task{
+        width: 80%;
+    }
+    .settings{
+        flex-direction: column;
+    }
+
+    .settings-btn-add, .settings-sarch {
+        width: 100%;
+    }
+    .settings-btn-add > button {
+        margin-bottom: 1em;
+    }
+    .settings-sarch > input {
+        width: 100%;
+    }
+}
