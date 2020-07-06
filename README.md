@@ -1,7 +1,7 @@
 Proyecto realizado en React y Nodejs.
 
 Se trata de una aplicación de tareas en la cual podrás hacer las operaciones
-básicas de una CRUD como lo es el crear eliminar y eliminar tareas de tu propiedad
+básicas de una CRUD como lo es el crear eliminar y modificar tareas de tu propiedad
 
 Ademas cuenta con un sistema de autenticación tanto para loguearse como para registrarse
 
