@@ -14,12 +14,12 @@ Para iniciar iniciar el proyecto.
 dependencias de este:
     3.1 Abra una terminal y ubiquese dentro de la carpeta del proyecto
     3.2 Para iniciar el cliente frontend
-        npm install
         cd frontend 
+        npm install
         npm start 
     3.3 Para iniciar el servidor backend
-        npm install
         cd backend
+        npm install
         npm run dev
 4. Iniciados los servidores el cliente estará corriendo en http://localhost:3000/
 y su servidor en http://localhost:4000/
