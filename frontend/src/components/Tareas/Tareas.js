@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Modal from '../Modal/Modal'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Tareas.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -36,6 +38,17 @@ export default function Tareas (){
     useEffect(() => {
         getTareas()
     },[])
+    
+    function getFechaTasks(){
+        tareas.data.forEach(({ vence, titulo }) => {
+          let remainTime = (new Date(vence) - new Date() + 1000) / 1000,
+          remainDays = Math.floor(remainTime /(3600 * 24))
+    
+          if(remainDays <= '00'){
+              toast.warn(`${titulo} esta por vencer!`)
+          }
+        });
+    }getFechaTasks()
 
     const handleChange = (e) => {
         const filter = tareas.data.filter(item => item.titulo.toLowerCase().includes(e.target.value.toLowerCase()))
@@ -62,6 +75,7 @@ export default function Tareas (){
     }
     return (
         <div className="container-task">
+            <ToastContainer />
             <div className="settings">
                 <div className="settings-btn-add">
                     <button
