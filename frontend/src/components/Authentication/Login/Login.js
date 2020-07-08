@@ -40,7 +40,7 @@ export default function Login(props){
                     })
                     
                     setErrors({...errors})
-                    props.history.push('/task')
+                    props.history.push('/')
                     
 
                 }
